@@ -1,11 +1,10 @@
-import stacklineLogo from './assets/stackline_logo.svg';
+import { ProductDashboard, SiteHeader } from "./components";
 
 function App() {
   return (
-    <div className="app">
-      <header>
-        <h1>Hello </h1><img id="stackline-logo" src={stacklineLogo} alt="Stackline Logo" />
-      </header>
+    <div id="app">
+      <SiteHeader />
+      <ProductDashboard />
     </div>
   )
 }

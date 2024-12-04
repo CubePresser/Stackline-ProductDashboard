@@ -1,21 +1,73 @@
+:root {
+  /* Got these colors directly from the stackline website */
+  --stackline-blue: #46a8f6;
+  --neutral-800: #193765;
+  --background-light-grey: #f6f9fc;
+}
+
 body {
   margin: 0;
+  background-color: var(--background-light-grey);
 
   font-family: "Poppins", serif;
   font-weight: 400;
   font-style: normal;
 }
 
-.app > header {
+#site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
-  align-items: baseline;
+  align-items: center;
+
+  background-color: var(--neutral-800);
+  color: white;
+
+  padding: 28px 24px;
 }
 
-.app > header > h1 {
-  font-weight: 500;
+@media only screen and (min-width: 700px) {
+  body #product-dashboard {
+    flex-direction: row;
+    align-items: normal;
+  }
 }
 
-#stackline-logo {
-  height: 24px;
-  margin-left: 8px;
+#product-dashboard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 24px;
+
+  padding: 48px 24px;
+}
+
+
+
+#product-dashboard .product-overview-wrapper {
+  
+}
+
+#product-dashboard .product-dashboard--widgets {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 5px 5px 20px -3px rgba(0,0,0,0.1);
+  border-radius: 2px;
+
+  padding: 16px;
+}
+
+.widget {
+  height: 800px;
 }

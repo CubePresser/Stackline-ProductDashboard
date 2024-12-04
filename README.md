@@ -2,7 +2,7 @@
 My take on the Stackline Web Developer Assessment.
 ## Getting Started
 
-Visit the app in action on [Github Pages](https://CubePresser.github.com/Stackline-ProductDashboard)!
+Visit the app in action on [Github Pages](https://CubePresser.github.io/Stackline-ProductDashboard)!
 
 Or if you'd rather run it locally
 ```
