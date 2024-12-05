@@ -1,7 +1,21 @@
 import React from 'react';
+import { Product } from '../types';
 
-export const ProductOverview: React.FC = () => {
+type ProductOverviewProps = {
+  product: Product | null;
+}
+
+export const ProductOverview: React.FC<ProductOverviewProps> = ({
+  product
+}) => {
   return (
-    <article className="product-overview">Product Overview</article>
+    <article className="product-overview">
+      {product ? (
+        <>
+        <h1>{ product.title }</h1>
+        <p>{ product.subtitle }</p>
+        </>
+      ): null}
+    </article>
   );
 }

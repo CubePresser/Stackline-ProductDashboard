@@ -45,12 +45,6 @@ body {
   padding: 48px 24px;
 }
 
-
-
-#product-dashboard .product-overview-wrapper {
-  
-}
-
 #product-dashboard .product-dashboard--widgets {
   flex-grow: 1;
 

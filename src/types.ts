@@ -1,3 +1,7 @@
+export type Dictionary<T> = {
+  [key: string]: T;
+};
+
 export type Review = {
   customer: string;
   review: string;
@@ -5,7 +9,7 @@ export type Review = {
 };
 
 export type Sale = {
-  weekEnding: Date;
+  weekEnding: string;
   retailSales: number;
   wholesaleSales: number;
   unitsSold: number;
