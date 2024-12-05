@@ -23,8 +23,8 @@ export const ProductOverview: React.FC<ProductOverviewProps> = ({
         <p>{ product.subtitle }</p>
         <ul className="tags-list">
           {
-            product.tags.map(tag => (
-              <li className="tag">{tag}</li>
+            product.tags.map((tag, idx) => (
+              <li className="tag" key={`${tag}-${idx}`}>{tag}</li>
             ))
           }
         </ul>

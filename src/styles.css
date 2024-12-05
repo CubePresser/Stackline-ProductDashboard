@@ -37,7 +37,7 @@ body {
 }
 
 /* Supporting a mobile layout, just in case */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 900px) {
   body #product-dashboard {
     flex-direction: row;
     align-items: normal;
@@ -60,7 +60,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  justify-content: stretch;
   gap: 24px;
+
+  min-width: 0;
+  width: 100%;
 }
 
 #product-dashboard .product-overview {
@@ -117,14 +121,37 @@ body {
   padding: 2px 16px;
 }
 
-.widget {
-  height: 800px;
-}
-
 .card {
   background-color: white;
   box-shadow: 5px 5px 20px -3px rgba(0,0,0,0.1);
   border-radius: 2px;
 
   padding: 16px;
+}
+
+.widget table {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid var(--border-grey);
+}
+
+th, td {
+  font-size: 14px;
+  padding: 20px 2px;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+}
+
+td {
+  color: var(--sub-font);
+  font-weight: 200;
 }

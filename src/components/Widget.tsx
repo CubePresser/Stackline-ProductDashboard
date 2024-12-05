@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const Widget: React.FC = () => {
+export const Widget: React.FC<React.PropsWithChildren> = ({
+  children
+}) => {
   return (
-    <article className="widget card">Widget</article>
+    <article className="widget card">{ children }</article>
   );
 };
